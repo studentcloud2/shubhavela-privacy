@@ -3,56 +3,202 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — Shubhavela / శుభవేళ</title>
+  <title>Shubhavela / శుభవేళ — Telugu Panchangam &amp; Family Vault</title>
+  <meta name="description" content="Shubhavela (శుభవేళ) is an offline-first Telugu Panchangam, Family Vault, Muhurtham, and Japa Mala app computed locally using Drik Siddhanta astronomy." />
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.65; color: #2b1a1c; background: #fffdf7; }
-    h1, h2, h3 { color: #6b1d28; }
-    hr { border: 0; border-top: 1px solid #e7d7c1; margin: 1.5rem 0; }
-    a { color: #8c2f39; }
-    .meta { color: #6e5a5c; font-size: 0.95rem; }
+    :root {
+      --ivory: #fffdf7;
+      --paper: #fbf5e9;
+      --border: #e6d6bc;
+      --kumkum: #6b1d28;
+      --kumkum-hover: #862433;
+      --gold: #b5892e;
+      --ink: #2b1a1c;
+      --muted: #645153;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Telugu", sans-serif;
+      background: var(--ivory);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.25rem 1.25rem 3.5rem;
+    }
+    header {
+      text-align: center;
+      padding: 2.25rem 1.5rem 2rem;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+    .diya {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 0.75rem;
+      display: block;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--kumkum);
+      letter-spacing: 0.01em;
+    }
+    .telugu-title {
+      margin: 0.25rem 0 0;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .tagline {
+      margin: 0.9rem auto 0;
+      max-width: 540px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .actions {
+      margin-top: 1.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.65rem 1.25rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary {
+      background: var(--kumkum);
+      color: #fffdf7;
+      border: 1px solid var(--kumkum);
+    }
+    .btn-primary:hover { background: var(--kumkum-hover); border-color: var(--kumkum-hover); }
+    .btn-secondary {
+      background: var(--ivory);
+      color: var(--kumkum);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { border-color: var(--gold); }
+    .divider {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--kumkum);
+      font-size: 1.3rem;
+      margin: 0 0 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.15rem 1.25rem;
+    }
+    .card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1.02rem;
+      color: var(--kumkum);
+    }
+    .card p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .privacy-note {
+      background: var(--ivory);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    a { color: var(--kumkum); }
+    footer nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Shubhavela / శుభవేళ</h1>
-  <p class="meta"><strong>Effective Date:</strong> October 30, 2026 &nbsp;|&nbsp; <strong>Developer:</strong> Shubhavela Team &nbsp;|&nbsp; <strong>Contact:</strong> <a href="mailto:support@shubhavela.com">support@shubhavela.com</a></p>
-  <hr />
-  <h2>1. Overview</h2>
-  <p><strong>Shubhavela (శుభవేళ)</strong> computes Telugu Panchangam calendars and stores family records and japa state locally on your device. Android includes Google Mobile Ads; the current iOS app does not include an advertising SDK.</p>
+  <main class="wrap">
+    <header>
+      <svg class="diya" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 6C24 6 19 13.5 19 18.2C19 21.3 21.2 23.5 24 23.5C26.8 23.5 29 21.3 29 18.2C29 13.5 24 6 24 6Z" fill="#D9822B"/>
+        <path d="M24 11.5C24 11.5 21.4 15.6 21.4 18.2C21.4 19.8 22.6 21 24 21C25.4 21 26.6 19.8 26.6 18.2C26.6 15.6 24 11.5 24 11.5Z" fill="#FFF2B2"/>
+        <path d="M10 26.5C12.5 34.2 18 37.5 24 37.5C30 37.5 35.5 34.2 38 26.5H10Z" fill="#B5892E"/>
+        <path d="M17 39.5H31" stroke="#6B1D28" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <h1>Shubhavela</h1>
+      <p class="telugu-title">శుభవేళ — Telugu Panchangam</p>
+      <p class="tagline">A serene, offline-first Telugu Panchangam, Family Vault, Muhurtham lookup, and Japa Mala companion computed directly on your device using Drik Siddhanta astronomy.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/privacy/">Privacy Policy</a>
+        <a class="btn btn-secondary" href="mailto:support@shubhavela.com">Contact Support</a>
+      </div>
+    </header>
 
-  <h2>2. Data Collection &amp; Usage</h2>
-  <h3>A. Family Records and Japa State</h3>
-  <ul>
-    <li><strong>No Account Required:</strong> You do not need to register, sign in, or provide an email, phone number, or name to use Shubhavela.</li>
-    <li><strong>Device-Local Spiritual Data:</strong> Reminders, family dates, notes, custom mantras, and japa progress are saved in private app storage. Shubhavela does not upload these records to an application server or provide cloud synchronization.</li>
-    <li><strong>Backups:</strong> Android app backup is disabled. iOS app state may be included in operating-system backups according to your device settings.</li>
-  </ul>
+    <hr class="divider" />
 
-  <h3>B. Advertising &amp; Usage Analytics (Google Mobile Ads &amp; Firebase Analytics)</h3>
-  <ul>
-    <li>The Android app uses Google Mobile Ads (AdMob) to display advertisements and may use Firebase Analytics (Google Analytics for Firebase) in production releases to measure anonymous app usage and ad performance.</li>
-    <li>Google AdMob and Firebase Analytics may collect pseudonymous identifiers (such as the Android Advertising ID or app instance ID), coarse IP-derived region, and aggregate app interaction events in accordance with <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-    <li><strong>Strict Non-PII Boundary:</strong> Personal Family Vault entries (names, notes, birth/shraddha dates), custom mantra text, and raw GPS coordinates are <strong>never</strong> sent to analytics.</li>
-  </ul>
+    <section aria-labelledby="features-heading">
+      <h2 id="features-heading">Built for Daily Devotion &amp; Accuracy</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Daily Panchangam</h3>
+          <p>Tithi, Nakshatra, Yoga, Karana, sunrise &amp; sunset, Rahu Kalam, Yamagandam, Durmuhurtham, Varjyam, Amrita Kalam, and Chogadiya in Telugu and English.</p>
+        </div>
+        <div class="card">
+          <h3>Family Vault (కుటుంబ పట్టిక)</h3>
+          <p>Track Janma Nakshatra birthdays, Masikam, and Taddinam (Shraddha) dates with city-aware lunar observance reminders stored strictly on your phone.</p>
+        </div>
+        <div class="card">
+          <h3>Muhurtham &amp; Festivals</h3>
+          <p>Explore monthly festivals, Ekadashi, Pradosham, and auspicious Muhurtham windows calculated offline for your chosen city.</p>
+        </div>
+        <div class="card">
+          <h3>Quiet 108-Bead Japa Mala</h3>
+          <p>A calm, distraction-free counter with gentle haptics and local progress tracking — no sign-in required.</p>
+        </div>
+      </div>
 
-  <h3>C. Location Data (GPS)</h3>
-  <ul>
-    <li>When you tap "Use my location", the app requests coarse location permission and reads a single position solely in memory to pick the nearest built-in city. The reading is not stored or transmitted to a Shubhavela server.</li>
-    <li>You can use the app fully without location permissions by choosing any city from the built-in offline directory.</li>
-  </ul>
+      <div class="privacy-note">
+        <strong>Private by design:</strong> Shubhavela requires no account or login. Your family dates, notes, and Japa progress remain strictly on your device and are never uploaded to our servers. Read the full <a href="/privacy/">Privacy Policy</a>.
+      </div>
+    </section>
 
-  <h2>3. Third-Party Sharing</h2>
-  <p>We do not sell, rent, or trade your personal data. Third-party advertising partners (Google AdMob) receive only standard advertising telemetry governed by their privacy policies.</p>
-
-  <h2>4. Data Retention &amp; Deletion</h2>
-  <ul>
-    <li>Delete any individual reminder directly inside the <strong>Family Vault</strong> screen.</li>
-    <li>Permanently wipe all stored data anytime via <strong>Android Settings &gt; Apps &gt; Shubhavela &gt; Storage &gt; Clear Data</strong>, or by uninstalling the app.</li>
-  </ul>
-
-  <h2>5. Children's Privacy</h2>
-  <p>Family records and japa state are handled locally regardless of age. Android advertising services may process the advertising telemetry described in Section 2B.</p>
-
-  <h2>6. Contact Us</h2>
-  <p>Email: <a href="mailto:support@shubhavela.com">support@shubhavela.com</a></p>
+    <footer>
+      <span>&copy; 2026 Shubhavela Team</span>
+      <nav aria-label="Footer links">
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="mailto:support@shubhavela.com">support@shubhavela.com</a>
+      </nav>
+    </footer>
+  </main>
 </body>
 </html>
